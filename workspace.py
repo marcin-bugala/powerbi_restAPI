@@ -48,6 +48,7 @@ class Workspace:
     Dataset :
         Object representing dataset in workspace
     """
+    # you can define your own dictionary with workspaces names & ID`s
     workspaces_id = {'Sales Reports': 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx'}
     
     
@@ -81,7 +82,8 @@ class Workspace:
         """
         Method used to setup connection with PowerBI Rest API, and create self.header
         """
-        
+
+        # below provide your own tenant_id, client_id and client_secret
         tenant_id = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
         authority_url = 'https://login.microsoftonline.com/'+tenant_id+'/'
         resource_url = 'https://analysis.windows.net/powerbi/api'
